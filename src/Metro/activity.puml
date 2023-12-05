@@ -1,0 +1,35 @@
+!define METAL_BLUE
+skinparam class {
+    BackgroundColor METAL_BLUE
+    BorderColor METAL_BLUE
+}
+
+|Start|
+:Create Metro Map Operations;
+    |Create Metro Map|
+    :Initialize Graph and Vertices;
+    :Add Vertices and Edges;
+    |Display Metro Stations|
+repeat
+    :Accept User Input;
+    :Perform Operations Menu;
+    |Find Path|
+    :Accept Source and Destination Stations;
+    :Check if Path Exists (hasPath());
+    :Display Result;
+    |Dijkstra's Shortest Path|
+    :Accept Source and Destination Stations;
+    :Execute Dijkstra's Algorithm (dijkstra());
+    :Display Minimum Distance;
+    |Get Minimum Distance and Time|
+    :Accept Source and Destination Stations;
+    :Execute Algorithm (Get_Minimum_Distance/Get_Minimum_Time);
+    :Display Result;
+    |Get Interchanges|
+    :Accept Source and Destination Stations;
+    :Execute Algorithm (get_Interchanges);
+    :Display Result;
+    |Exit|
+repeat while (Exit not chosen)
+|End|
+@enduml
